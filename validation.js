@@ -9,7 +9,7 @@ export const registerValidation = [
     body('email', 'not correct format of mail').isEmail(),
     body('password', 'password should be more longer than 5 leets').isLength({ min: 5 }),
     body('fullName', 'Name should be more longer than 3 leets').isLength({ min: 3 }),
-    body('avatarUrl').optional().isURL(),
+    // body('avatarUrl').optional().isURL(),
 ];
 
 export const postCreateValidation = [
